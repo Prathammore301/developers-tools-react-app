@@ -1,0 +1,62 @@
+/* UtilityContainer.css */
+
+/* Fixing button visibility for dark mode */
+.btn-outline-dark {
+    border-color: #6c757d; /* Border color for outline button */
+    color: #6c757d; /* Text color */
+}
+
+.btn-outline-dark:hover {
+    background-color: #6c757d;
+    color: #fff;
+}
+
+.utility-container-dark:hover{
+    box-shadow: 3px 4px 10px rgb(214, 66, 66);
+    overflow: hidden;
+}
+
+/* Container size and positioning */
+.utility-container {
+    max-width: 800px;  /* Set a maximum width */
+    width: 100%; /* Full width, but limited by max-width */
+    min-height: 600px; /* Set a minimum height */
+    height: auto;
+    padding: 20px;
+    background-color: #fff; /* Background for better contrast */
+    border-radius: 8px;
+    box-shadow: 3px 2px 10px 1px rgba(0, 0, 0, 0.884);
+    overflow: hidden;
+}
+
+
+/* Ensure the textareas are responsive */
+textarea.form-control {
+    resize: none; /* Disable resizing of textarea */
+}
+
+.toggle-btn {
+    transition: all 0.3s ease;
+}
+
+/* Fix icons and titles inside the cards */
+.utility-card .utility-icon,
+.utility-card .utility-title {
+    color: black !important; /* Force black color */
+}
+
+/* Ensure icon stays visible */
+.utility-icon {
+    display: inline-block;
+}
+
+.utility-container.json-formatter {
+    height: auto;
+    min-height: 500px; /* Increased height for large JSON */
+}
+
+.utility-container.timestamp-converter {
+    height: auto;
+    min-height: 500px;
+    max-width: 900px; /* Increased width */
+}

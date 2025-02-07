@@ -1,0 +1,85 @@
+:root {
+    --text-color: #000;
+    --background-color: #fff;
+    --border-color: #000;
+}
+
+.dark-mode {
+    --text-color: #fff;
+    --background-color: #121212;
+    --border-color: #fff;
+}
+
+.title, .subtitle, label {
+    color: var(--text-color);
+    text-align: center;
+}
+
+.subtitle {
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: gray;
+}
+
+.toggle-group {
+    display: flex;
+    justify-content: center;
+    max-width: 600px;
+    width: 100%;
+    margin: auto;
+}
+
+.toggle-group button {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid var(--border-color);
+    font-size: 16px;
+    color: var(--text-color);
+    cursor: pointer;
+    background: transparent;
+    transition: all 0.3s ease;
+}
+
+.toggle-group button.active {
+    background: var(--text-color);
+    color: var(--background-color);
+}
+
+label {
+    display: block;
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.input-box, .output-box {
+    width: 100%;
+    max-width: 600px;
+    height: 150px;
+    padding: 10px;
+    font-size: 16px;
+    background: var(--background-color);
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
+    border-radius: 5px;
+    display: block;
+    margin: 10px auto;
+}
+
+.input-box.decoded {
+    color: black;
+}
+
+.copy-btn {
+    display: block;
+    width: 100%;
+    max-width: 150px;
+    margin: 20px auto;
+    padding: 10px;
+    background: var(--text-color);
+    color: var(--background-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}

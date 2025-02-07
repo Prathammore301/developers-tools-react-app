@@ -1,0 +1,95 @@
+:root {
+    --text-color: #000; /* Default Light Mode Text Color */
+    --background-color: #fff; /* Default Light Mode Background */
+}
+
+.dark-mode {
+    --text-color: #fff; /* Dark Mode Text Color */
+    --background-color: #121212; /* Dark Mode Background */
+}
+
+.hex-title, .subtitle, label, .output p {
+    color: var(--text-color);
+}
+.subtitle {
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+
+
+.hex-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 50px; /* Added margin-top to center the form */
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+}
+
+label {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.hex-input-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.hex-input {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    font-size: 16px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
+}
+
+.color-preview {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid var(--text-color);
+}
+
+.rgb-input-group {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.rgb-input-group div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rgb-input {
+    width: 100px;
+    padding: 12px;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
+}
+
+.output {
+    text-align: left;
+    margin-top: 20px;
+    font-size: 16px;
+}

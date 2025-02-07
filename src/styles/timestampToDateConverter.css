@@ -1,0 +1,65 @@
+:root {
+    --text-color: #000;
+    --background-color: #fff;
+    --border-color: #000;
+}
+
+.dark-mode {
+    --text-color: #fff;
+    --background-color: #121212;
+    --border-color: #fff;
+}
+
+.title, .subtitle, label {
+    color: var(--text-color);
+    text-align: center;
+}
+
+.subtitle {
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: gray;
+}
+
+label {
+    display: block;
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.timestamp-input, .timestamp-output {
+    width: 100%;
+    max-width: 700px;
+    height: 140px; /* Increased height for better visibility */
+    padding: 12px;
+    font-size: 16px;
+    background: var(--background-color);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    display: block;
+    margin: 10px auto;
+    resize: vertical; /* Allow resizing */
+}
+
+
+.copy-btn {
+    display: block;
+    width: 130px;
+    height: 40px;
+    margin: 20px auto;
+    padding: 10px;
+    background: var(--text-color);
+    color: var(--background-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.copy-btn:hover {
+    opacity: 0.8;
+}
