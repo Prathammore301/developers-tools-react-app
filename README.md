@@ -1,4 +1,3 @@
-=======
 <h1 align="center">🛠️ Developers Tools React App</h1>
 
 <p align="center">
